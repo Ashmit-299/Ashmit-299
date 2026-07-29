@@ -15,7 +15,7 @@ Building AI applications that solve real-world problems.
 
 <td width="30%" align="center" valign="top">
 
-<img src="./assets/profile.png" width="220" alt="Ashmit Pandey"/>
+<img src="./assets/profile.jpg" width="220" alt="Ashmit Pandey"/>
 
 <br><br>
 
