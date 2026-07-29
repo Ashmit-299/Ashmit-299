@@ -68,9 +68,13 @@ AI Agents
 
 <p align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Ashmit-299&show_icons=true&theme=github_dark&hide_border=true"/>
+<img
+height="170"
+src="https://github-readme-stats.vercel.app/api?username=Ashmit-299&show_icons=true&theme=tokyonight&hide_border=true"/>
 
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=Ashmit-299&theme=github-dark&hide_border=true"/>
+<img
+height="170"
+src="https://streak-stats.demolab.com?user=Ashmit-299&theme=tokyonight&hide_border=true"/>
 
 </p>
 
@@ -78,7 +82,7 @@ AI Agents
 
 <p align="center">
 
-<img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=Ashmit-299&theme=github-compact&hide_border=true"/>
+<img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=Ashmit-299&theme=tokyo-night&hide_border=true"/>
 
 </p>
 

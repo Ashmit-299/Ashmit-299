@@ -6,10 +6,12 @@
 fill:#0d1117;
 }
 
-.text {
-fill:#58a6ff;
-font-family:Consolas,monospace;
-font-size:13px;
+.text{
+fill:#8ab4f8;
+font-family:'Courier New',monospace;
+font-size:10px;
+font-weight:bold;
+letter-spacing:0px;
 white-space:pre;
 }
 

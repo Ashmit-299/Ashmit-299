@@ -45,7 +45,14 @@ font-size:20px;
 
 <rect class="background" width="100%" height="100%"/>
 
-<text class="text" x="35" y="40" xml:space="preserve">
+<text
+x="35"
+y="35"
+font-family="Consolas,monospace"
+font-size="11"
+fill="#58a6ff"
+xml:space="preserve"
+style="white-space: pre;">
 {ascii_art}
 </text>
 
