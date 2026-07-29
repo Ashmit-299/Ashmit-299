@@ -3,7 +3,7 @@
 
 <td width="35%" align="center">
 
-<img src="assets/profile.jpg" width="220px" style="border-radius:50%;" />
+<img src="assets/profile.png" width="220px" style="border-radius:50%;" />
 
 <br><br>
 
