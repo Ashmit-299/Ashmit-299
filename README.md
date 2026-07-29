@@ -118,9 +118,9 @@ Linux               ████████████░░░░░░░   
 
 <p align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=Ashmit-299&show_icons=true&theme=tokyonight"/>
+<img width="48%" src="https://github-readme-stats.vercel.app/api?username=Ashmit-299&show_icons=true&theme=tokyonight"/>
 
-<img height="180" src="https://streak-stats.demolab.com?user=Ashmit-299&theme=tokyonight"/>
+<img width="48%" src="https://streak-stats.demolab.com?user=Ashmit-299&theme=tokyonight"/>
 
 </p>
 
