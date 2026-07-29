@@ -1,80 +1,107 @@
-<table>
-<tr>
+<div align="center">
 
-<td width="38%" align="center" valign="top">
+# ASHMIT OS v2.0
 
-<img src="assets/profile.png" width="280"/>
+<img src="assets/terminal.svg" width="100%">
 
-<h2>Ashmit Pandey</h2>
+</div>
 
-<b>AI/ML Engineer</b>
+---
 
-📍 Maharashtra, India
+# > whoami
 
-<br><br>
-
-<a href="https://github.com/Ashmit-299">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-<br>
-
-<a href="mailto:your_email@gmail.com">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-
-<br>
-
-<a href="https://linkedin.com/in/yourprofile">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-</td>
-
-<td width="62%" valign="top">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2500&pause=1000&color=58A6FF&vCenter=true&width=420&lines=class+AshmitPandey;AI%2FML+Engineer;Python+Developer;FastAPI+%7C+OpenCV+%7C+SQL"/>
-
-```python
-class AshmitPandey:
-
-    def __init__(self):
-
-        self.name = "Ashmit Pandey"
-
-        self.role = "AI/ML Engineer"
-
-        self.location = "Maharashtra, India"
-
-        self.education = "B.E. AI & ML"
-
-        self.skills = {
-            "Languages": ["Python", "SQL", "Java"],
-            "Frameworks": ["FastAPI", "OpenCV"],
-            "Libraries": ["MediaPipe", "NumPy", "Pandas"]
-        }
-
-        self.projects = [
-            "Resume AI",
-            "AI Hand Gesture Controller",
-            "Image Automation"
-        ]
-
-        self.interests = [
-            "Artificial Intelligence",
-            "Computer Vision",
-            "Automation"
-        ]
-
-        self.github = "github.com/Ashmit-299"
-
-        self.status = "Open to Work"
-
-    def say_hi(self):
-        return "Thanks for visiting my profile 🚀"
+```bash
+Name        : Ashmit Pandey
+Role        : AI/ML Engineer
+Status      : Looking for Opportunities
+Location    : India
+Education   : B.E. Artificial Intelligence & Machine Learning
 ```
 
-</td>
+---
 
-</tr>
-</table>
+# > skills
+
+```text
+Python              ████████████████████ 95%
+SQL                 ██████████████████   90%
+FastAPI             ████████████████     85%
+OpenCV              ████████████████     85%
+Machine Learning    ███████████████      80%
+Git                 ██████████████       80%
+Linux               ████████████         75%
+```
+
+---
+
+# > current_projects
+
+```text
+✔ AI Resume Analyzer
+
+✔ AI Hand Gesture Controller
+
+✔ Stable Diffusion Automation
+
+✔ Image Generation Pipeline
+```
+
+---
+
+# > currently_learning
+
+```text
+Deep Learning
+
+LLMs
+
+RAG
+
+LangChain
+
+AI Agents
+```
+
+---
+
+# > github
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Ashmit-299&show_icons=true&theme=github_dark&hide_border=true"/>
+
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=Ashmit-299&theme=github-dark&hide_border=true"/>
+
+</p>
+
+---
+
+<p align="center">
+
+<img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=Ashmit-299&theme=github-compact&hide_border=true"/>
+
+</p>
+
+---
+
+# > connect
+
+<p align="center">
+
+<a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin">
+</a>
+
+<a href="mailto:YOUR_EMAIL">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail">
+</a>
+
+</p>
+
+---
+
+<div align="center">
+
+### Building AI applications that solve real-world problems.
+
+</div>

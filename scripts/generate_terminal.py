@@ -1,27 +1,125 @@
-import os
+from pathlib import Path
 
-def generate_terminal_svg(output_path):
-    """Generate a terminal-style SVG."""
-    svg_content = '''<?xml version="1.0" encoding="UTF-8"?>
-<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="#1e1e1e"/>
-  <rect x="10" y="10" width="580" height="380" fill="#0d0d0d" rx="5"/>
-  
-  <circle cx="30" cy="25" r="5" fill="#ff5f56"/>
-  <circle cx="50" cy="25" r="5" fill="#ffbd2e"/>
-  <circle cx="70" cy="25" r="5" fill="#27c93f"/>
-  
-  <text x="30" y="70" font-family="monospace" font-size="14" fill="#00ff00">
-    <tspan x="30" dy="0">$ ashmit-299</tspan>
-    <tspan x="30" dy="20">Welcome to my GitHub profile!</tspan>
-    <tspan x="30" dy="20">$ _</tspan>
-  </text>
-</svg>'''
-    
-    with open(output_path, 'w') as f:
-        f.write(svg_content)
-    
-    print(f"Terminal SVG saved to {output_path}")
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-if __name__ == "__main__":
-    generate_terminal_svg("assets/terminal.svg")
+ASCII_FILE = BASE_DIR / "assets" / "profile-ascii.txt"
+OUTPUT_FILE = BASE_DIR / "assets" / "terminal.svg"
+
+ascii_art = ASCII_FILE.read_text(encoding="utf-8")
+
+svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760">
+
+<style>
+
+.background {{
+fill:#0d1117;
+}}
+
+.text {{
+fill:#58a6ff;
+font-family:Consolas,monospace;
+font-size:13px;
+white-space:pre;
+}}
+
+.info {{
+fill:#c9d1d9;
+font-family:Consolas,monospace;
+font-size:20px;
+}}
+
+.title {{
+fill:#58a6ff;
+font-family:Consolas,monospace;
+font-size:26px;
+font-weight:bold;
+}}
+
+.green {{
+fill:#3fb950;
+font-family:Consolas,monospace;
+font-size:20px;
+}}
+
+</style>
+
+<rect class="background" width="100%" height="100%"/>
+
+<text class="text" x="35" y="40" xml:space="preserve">
+{ascii_art}
+</text>
+
+<text class="title" x="520" y="60">
+ASHMIT OS v2.0
+</text>
+
+<text class="green" x="520" y="95">
+&gt; Booting...
+</text>
+
+<text class="info" x="520" y="140">
+[████████████████████] 100%
+</text>
+
+<text class="info" x="520" y="190">
+User ............. Ashmit Pandey
+</text>
+
+<text class="info" x="520" y="225">
+Role ............. AI/ML Engineer
+</text>
+
+<text class="info" x="520" y="260">
+Status ........... Looking for Opportunities
+</text>
+
+<text class="info" x="520" y="320">
+Python ........... ████████████ 95%
+</text>
+
+<text class="info" x="520" y="355">
+SQL .............. ██████████ 90%
+</text>
+
+<text class="info" x="520" y="390">
+FastAPI .......... █████████ 85%
+</text>
+
+<text class="info" x="520" y="425">
+OpenCV ........... █████████ 85%
+</text>
+
+<text class="info" x="520" y="460">
+Machine Learning . ████████ 80%
+</text>
+
+<text class="info" x="520" y="525">
+Mission:
+</text>
+
+<text class="green" x="520" y="555">
+Building AI applications that solve real-world problems.
+</text>
+
+<text class="info" x="520" y="615">
+Latest Projects
+</text>
+
+<text class="green" x="520" y="645">
+▶ AI Resume Analyzer
+</text>
+
+<text class="green" x="520" y="675">
+▶ AI Hand Gesture Controller
+</text>
+
+<text class="green" x="520" y="705">
+▶ Image Automation Pipeline
+</text>
+
+</svg>
+"""
+
+OUTPUT_FILE.write_text(svg, encoding="utf-8")
+
+print("terminal.svg generated.")
