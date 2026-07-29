@@ -126,7 +126,7 @@ Linux               ████████████░░░░░░░   
 
 <p align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ashmit-299&theme=tokyo-night" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ashmit-299&theme=github-dark" width="100%" />
 
 </p>
 
