@@ -2,6 +2,12 @@
 
 # <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32"> Hi, I'm Ashmit Pandey
 
+<p align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=AI%2FML+Engineer;Python+Developer;FastAPI+%7C+OpenCV+%7C+SQL;Building+AI+Applications;Open+to+Work"/>
+
+</p>
+
 ### AI/ML Engineer • Python Developer • FastAPI • OpenCV
 
 <img src="assets/terminal.svg" width="100%">
@@ -50,38 +56,63 @@ Interests:
 ## ⚡ Tech Stack
 
 ```text
-Programming
+Programming Languages
+──────────────────────────────────────────────
 
-Python        ████████████████████
+Python              ███████████████████░   92%
 
-SQL           ██████████████████
+SQL                 █████████████████░░   88%
 
-Java          ███████████
+Java                ████████████░░░░░░░   65%
 
-Backend
 
-FastAPI       ███████████████
+Backend Development
+──────────────────────────────────────────────
 
-Flask         ██████████
+FastAPI             ███████████████░░░░   82%
 
-AI
+Flask               ████████████░░░░░░░   68%
 
-OpenCV        ███████████████
 
-MediaPipe     █████████████
+Artificial Intelligence
+──────────────────────────────────────────────
 
-NumPy         ███████████████
+Machine Learning    ███████████████░░░░   80%
 
-Pandas        ███████████████
+OpenCV              ████████████████░░░   85%
+
+MediaPipe           ███████████████░░░░   82%
+
+Transformers        ██████████░░░░░░░░░   60%
+
+
+Data Science
+──────────────────────────────────────────────
+
+NumPy               ████████████████░░░   84%
+
+Pandas              ███████████████░░░░   82%
+
+
+Database
+──────────────────────────────────────────────
+
+PostgreSQL          █████████████░░░░░░   75%
+
+MySQL               ███████████████░░░░   80%
+
+
+Tools
+──────────────────────────────────────────────
+
+Git                 ███████████████░░░░   82%
+
+GitHub              ███████████████░░░░   82%
+
+VS Code             ██████████████████░   90%
+
+Linux               ████████████░░░░░░░   68%
 ```
-
-## 🚀 Featured Projects
-
-| Project | Description |
-|----------|-------------|
-| 🤖 AI Resume Analyzer | Resume ATS & Similarity Analyzer |
-| ✋ AI Hand Gesture Controller | Control PC using hand gestures |
-| 🎨 Image Automation Pipeline | Stable Diffusion Automation |
 
 ## 📈 GitHub Statistics
 
