@@ -7,7 +7,13 @@ OUTPUT_FILE = BASE_DIR / "assets" / "terminal.svg"
 
 ascii_art = ASCII_FILE.read_text(encoding="utf-8")
 
-svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760">
+SVG = f"""<?xml version="1.0" encoding="UTF-8"?>
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+width="1400"
+height="760"
+viewBox="0 0 1400 760">
 
 <style>
 
@@ -15,118 +21,215 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760">
 fill:#0d1117;
 }}
 
-.text {{
-fill:#58a6ff;
-font-family:Consolas,monospace;
-font-size:13px;
-white-space:pre;
+.window {{
+fill:#161b22;
+stroke:#30363d;
+stroke-width:2;
 }}
 
-.info {{
+.header {{
+fill:#21262d;
+}}
+
+.title {{
 fill:#c9d1d9;
 font-family:Consolas,monospace;
 font-size:20px;
 }}
 
-.title {{
-fill:#58a6ff;
-font-family:Consolas,monospace;
-font-size:26px;
-font-weight:bold;
+.red {{
+fill:#ff5f56;
+}}
+
+.yellow {{
+fill:#ffbd2e;
 }}
 
 .green {{
-fill:#3fb950;
+fill:#27c93f;
+}}
+
+.ascii {{
+fill:#58a6ff;
+font-family:'Courier New',monospace;
+font-size:10px;
+font-weight:bold;
+white-space:pre;
+}}
+
+.label {{
+fill:#58a6ff;
 font-family:Consolas,monospace;
 font-size:20px;
+font-weight:bold;
+}}
+
+.value {{
+fill:#c9d1d9;
+font-family:Consolas,monospace;
+font-size:20px;
+}}
+
+.footer {{
+fill:#3fb950;
+font-family:Consolas,monospace;
+font-size:18px;
 }}
 
 </style>
 
 <rect class="background" width="100%" height="100%"/>
 
+<rect
+class="window"
+x="25"
+y="25"
+width="1350"
+height="710"
+rx="18"/>
+
+<rect
+class="header"
+x="25"
+y="25"
+width="1350"
+height="45"
+rx="18"/>
+
+<circle class="red" cx="55" cy="47" r="8"/>
+<circle class="yellow" cx="80" cy="47" r="8"/>
+<circle class="green" cx="105" cy="47" r="8"/>
+
 <text
-x="35"
-y="35"
-font-family="Consolas,monospace"
-font-size="11"
-fill="#58a6ff"
-xml:space="preserve"
-style="white-space: pre;">
+class="title"
+x="620"
+y="52">
+ashmit@github:~$
+</text>
+
+<text
+class="ascii"
+x="45"
+y="95"
+xml:space="preserve">
 {ascii_art}
 </text>
 
-<text class="title" x="520" y="60">
+<text class="label" x="560" y="110">
 ASHMIT OS v2.0
 </text>
 
-<text class="green" x="520" y="95">
-&gt; Booting...
+<text class="footer" x="560" y="140">
+&gt; Boot sequence completed.
 </text>
 
-<text class="info" x="520" y="140">
-[████████████████████] 100%
+<text class="label" x="560" y="185">
+User
 </text>
 
-<text class="info" x="520" y="190">
-User ............. Ashmit Pandey
+<text class="value" x="760" y="185">
+Ashmit Pandey
 </text>
 
-<text class="info" x="520" y="225">
-Role ............. AI/ML Engineer
+<text class="label" x="560" y="220">
+Role
 </text>
 
-<text class="info" x="520" y="260">
-Status ........... Looking for Opportunities
+<text class="value" x="760" y="220">
+AI / ML Engineer
 </text>
 
-<text class="info" x="520" y="320">
-Python ........... ████████████ 95%
+<text class="label" x="560" y="255">
+Status
 </text>
 
-<text class="info" x="520" y="355">
-SQL .............. ██████████ 90%
+<text class="value" x="760" y="255">
+Open to Work
 </text>
 
-<text class="info" x="520" y="390">
-FastAPI .......... █████████ 85%
+<text class="label" x="560" y="300">
+OS
 </text>
 
-<text class="info" x="520" y="425">
-OpenCV ........... █████████ 85%
+<text class="value" x="760" y="300">
+Windows 11
 </text>
 
-<text class="info" x="520" y="460">
-Machine Learning . ████████ 80%
+<text class="label" x="560" y="335">
+Editor
 </text>
 
-<text class="info" x="520" y="525">
-Mission:
+<text class="value" x="760" y="335">
+VS Code
 </text>
 
-<text class="green" x="520" y="555">
-Building AI applications that solve real-world problems.
+<text class="label" x="560" y="370">
+Languages
 </text>
 
-<text class="info" x="520" y="615">
-Latest Projects
+<text class="value" x="760" y="370">
+Python • SQL • Java
 </text>
 
-<text class="green" x="520" y="645">
+<text class="label" x="560" y="405">
+Frameworks
+</text>
+
+<text class="value" x="760" y="405">
+FastAPI • OpenCV
+</text>
+
+<text class="label" x="560" y="440">
+Libraries
+</text>
+
+<text class="value" x="760" y="440">
+NumPy • Pandas • MediaPipe
+</text>
+
+<text class="label" x="560" y="475">
+Database
+</text>
+
+<text class="value" x="760" y="475">
+PostgreSQL
+</text>
+
+<text class="label" x="560" y="510">
+Learning
+</text>
+
+<text class="value" x="760" y="510">
+Deep Learning • LLMs • LangChain
+</text>
+
+<text class="label" x="560" y="560">
+Projects
+</text>
+
+<text class="footer" x="760" y="560">
 ▶ AI Resume Analyzer
 </text>
 
-<text class="green" x="520" y="675">
+<text class="footer" x="760" y="590">
 ▶ AI Hand Gesture Controller
 </text>
 
-<text class="green" x="520" y="705">
+<text class="footer" x="760" y="620">
 ▶ Image Automation Pipeline
+</text>
+
+<text class="label" x="560" y="680">
+Mission
+</text>
+
+<text class="footer" x="760" y="680">
+Building AI applications that solve real-world problems.
 </text>
 
 </svg>
 """
 
-OUTPUT_FILE.write_text(svg, encoding="utf-8")
+OUTPUT_FILE.write_text(SVG, encoding="utf-8")
 
-print("terminal.svg generated.")
+print("terminal.svg generated successfully.")

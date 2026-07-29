@@ -1,14 +1,21 @@
 from pathlib import Path
-from PIL import Image, ImageOps, ImageEnhance, ImageFilter
-
-WIDTH = 70
-
-ASCII_CHARS = "@%#*+=-:. "
+from PIL import Image, ImageEnhance, ImageOps
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 IMAGE_PATH = BASE_DIR / "assets" / "profile.png"
 OUTPUT_PATH = BASE_DIR / "assets" / "profile-ascii.txt"
+
+ASCII = " .'`^\",:;Il!i><~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
+
+WIDTH = 58
+
+
+def resize(image):
+    width, height = image.size
+    ratio = height / width
+    new_height = int(WIDTH * ratio * 0.52)
+    return image.resize((WIDTH, new_height))
 
 
 def preprocess(image):
@@ -17,61 +24,87 @@ def preprocess(image):
 
     image = ImageOps.autocontrast(image)
 
-    image = ImageEnhance.Contrast(image).enhance(2.2)
+    image = ImageEnhance.Contrast(image).enhance(2.5)
 
-    image = image.filter(ImageFilter.SHARPEN)
+    image = ImageEnhance.Sharpness(image).enhance(2)
 
     return image
 
 
-def resize(image):
+def pixel_to_char(pixel):
 
-    w, h = image.size
+    index = pixel * (len(ASCII) - 1) // 255
 
-    ratio = h / w
-
-    height = int(WIDTH * ratio * 0.50)
-
-    return image.resize((WIDTH, height))
+    return ASCII[index]
 
 
 def convert(image):
 
     pixels = image.load()
 
-    output = []
+    lines = []
 
     for y in range(image.height):
 
-        line = ""
+        row = ""
 
         for x in range(image.width):
 
-            pixel = pixels[x, y]
+            row += pixel_to_char(pixels[x, y])
 
-            index = int(pixel / 255 * (len(ASCII_CHARS) - 1))
+        lines.append(row.rstrip())
 
-            line += ASCII_CHARS[index]
+    return lines
 
-        output.append(line)
 
-    return "\n".join(output)
+def trim(lines):
+
+    while lines and lines[0].strip() == "":
+        lines.pop(0)
+
+    while lines and lines[-1].strip() == "":
+        lines.pop()
+
+    return lines
+
+
+def center(lines):
+
+    width = max(len(x) for x in lines)
+
+    centered = []
+
+    for line in lines:
+
+        centered.append(line.center(width))
+
+    return centered
+
+
+def save(lines):
+
+    OUTPUT_PATH.write_text("\n".join(lines), encoding="utf-8")
 
 
 def main():
 
     image = Image.open(IMAGE_PATH)
 
-    image = preprocess(image)
-
     image = resize(image)
 
-    ascii_art = convert(image)
+    image = preprocess(image)
 
-    OUTPUT_PATH.write_text(ascii_art, encoding="utf-8")
+    lines = convert(image)
 
-    print(ascii_art)
+    lines = trim(lines)
+
+    lines = center(lines)
+
+    save(lines)
+
+    print("ASCII generated successfully.")
 
 
 if __name__ == "__main__":
+
     main()
