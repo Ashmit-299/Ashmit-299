@@ -1,11 +1,25 @@
 from pathlib import Path
+from xml.sax.saxutils import escape
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 ASCII_FILE = BASE_DIR / "assets" / "profile-ascii.txt"
 OUTPUT_FILE = BASE_DIR / "assets" / "terminal.svg"
 
-ascii_art = ASCII_FILE.read_text(encoding="utf-8")
+ascii_lines = ASCII_FILE.read_text(encoding="utf-8").splitlines()
+
+ascii_svg = ""
+y = 95
+for line in ascii_lines:
+    ascii_svg += f'''
+<text
+class="ascii"
+x="45"
+y="{y}">
+{escape(line)}
+</text>
+'''
+    y += 11
 
 SVG = f"""<?xml version="1.0" encoding="UTF-8"?>
 
@@ -52,7 +66,7 @@ fill:#27c93f;
 .ascii {{
 fill:#58a6ff;
 font-family:'Courier New',monospace;
-font-size:10px;
+font-size:12px;
 font-weight:bold;
 white-space:pre;
 }}
@@ -107,13 +121,7 @@ y="52">
 ashmit@github:~$
 </text>
 
-<text
-class="ascii"
-x="45"
-y="95"
-xml:space="preserve">
-{ascii_art}
-</text>
+{ascii_svg}
 
 <text class="label" x="560" y="110">
 ASHMIT OS v2.0

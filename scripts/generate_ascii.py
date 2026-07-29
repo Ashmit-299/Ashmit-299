@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 IMAGE_PATH = BASE_DIR / "assets" / "profile.png"
 OUTPUT_PATH = BASE_DIR / "assets" / "profile-ascii.txt"
 
-ASCII = " .'`^\",:;Il!i><~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
+ASCII = " .:-=+*#%@"
 
 WIDTH = 58
 
@@ -88,7 +88,9 @@ def save(lines):
 
 def main():
 
-    image = Image.open(IMAGE_PATH)
+    image = Image.open(IMAGE_PATH).convert("RGBA")
+    background = Image.new("RGBA", image.size, (255, 255, 255, 255))
+    image = Image.alpha_composite(background, image).convert("RGB")
 
     image = resize(image)
 
