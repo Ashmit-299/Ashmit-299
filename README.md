@@ -92,11 +92,11 @@ src="https://streak-stats.demolab.com?user=Ashmit-299&theme=tokyonight&hide_bord
 
 <p align="center">
 
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
+<a href="www.linkedin.com/in/ashmit299">
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin">
 </a>
 
-<a href="mailto:YOUR_EMAIL">
+<a href="pandeyashmit299@gmail.com">
 <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail">
 </a>
 
