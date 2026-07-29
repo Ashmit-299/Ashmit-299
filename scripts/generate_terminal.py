@@ -9,12 +9,12 @@ OUTPUT_FILE = BASE_DIR / "assets" / "terminal.svg"
 ascii_lines = ASCII_FILE.read_text(encoding="utf-8").splitlines()
 
 ascii_svg = ""
-y = 95
+y = 120
 for line in ascii_lines:
     ascii_svg += f'''
 <text
 class="ascii"
-x="45"
+x="55"
 y="{y}">
 {escape(line)}
 </text>
@@ -66,7 +66,7 @@ fill:#27c93f;
 .ascii {{
 fill:#58a6ff;
 font-family:'Courier New',monospace;
-font-size:12px;
+font-size:11px;
 font-weight:bold;
 white-space:pre;
 }}
@@ -123,7 +123,7 @@ ashmit@github:~$
 
 {ascii_svg}
 
-<text class="label" x="560" y="110">
+<text class="label" x="560" y="125">
 ASHMIT OS v2.0
 </text>
 
